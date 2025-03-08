@@ -1,0 +1,15 @@
+.perguntas {
+    display: grid; /* Usa grid para organizar */
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas iguais */
+    gap: 20px; /* Espaçamento entre as perguntas */
+    margin: 50px; /* Espaçamento da borda da tela */
+  }
+  
+  .pergunta {
+    background: #f4f4f4; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #050505; /* Borda leve */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  

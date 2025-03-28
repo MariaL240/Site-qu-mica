@@ -3,104 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reações Químicas</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-    .imagem {
-          width: 300px; /* Ajusta o tamanho da imagem */
+        .caixa {
+          background-color: white; /* Cor de fundo branca */
+          padding: 20px; /* Espaçamento interno */
+          width: 300px; /* Largura da caixa */
+          text-align: center; /* Alinha o texto ao centro */
+          margin-left: 50px
+        }
+    
+        .imagem {
+          width: 50px; /* Ajusta o tamanho da imagem */
           height: auto; /* Mantém a proporção da imagem */
           display: block; /* Garante que a imagem fique alinhada corretamente */
           margin-left: 0; /* Alinha no canto esquerdo */
         }
-    
-    header {
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Mantém a largura e altura corretas */
+}
+header {
       display: flex; /* Ativa o Flexbox */
       justify-content: space-between;; /* Alinha os itens para o lado direito */
       background-color: #99cd85; /* Cor de fundo opcional */
-      padding: 20x 10px; /* Espaçamento interno */
     }
-    .container {
+  .imagem-direita {
+    width: 200px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção original */
+    display: flex; /* Garante que a imagem se comporte corretamente */
+    margin-left: auto; /* Empurra a imagem para a direita */
+    margin-right:20px ;
+}
+.container {
     display: flex; /* Organiza os itens em linha (horizontalmente) */
     align-items: center; /* Alinha a imagem e o título verticalmente */
     gap: 10px; /* Espaço entre a imagem e o texto */
+    padding-left: 20px; /* Distancia o conteúdo da borda esquerda do cabeçalho */
 }
-button {
-            background-color: black; /* Fundo preto */
-            color: white; /* Texto branco */
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #333; /* Preto mais claro ao passar o mouse */
-        }
-        h1 {
+.imagem {
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção correta */
+    display: block; /* Evita espaços extras ao redor */
+}
+h1 {
             font-family:'Times New Roman', Times, serif;
             font-size: 36px; /* Tamanho da fonte */
-            color: #fff; /* Cor do texto */
+            color: #333; /* Cor do texto */
         }
-    
-  </style>
-    
-    
-      </head>
+       
+</style> 
+    <title>Química - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-      <h1>Atividades</h1> <img src="M.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="conteúdos.html">Conteúdos</a></li>
-                <li><a href="exercícios.html">Exercícios</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="content">
-      <div class="container"> <h2>Agora nós vamos resolver algumas questões, para que você consiga absorver o contéudo da melhor forma.
-       Responda às perguntas abaixo sobre os conceitos de química que acabamos de estudar em relação á funções Inorgânicas.</h2>
-       <img src="bases2.webp" alt="bases" class="imagem"></div>
-        <form id="formExercicio" action="#" method="post">
-             <label for="resposta1">1. O que é um ácido? Dê um exemplo.</label><br>
-            <textarea id="resposta1" name="resposta1" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">2. Qual é a diferença entre uma base e um ácido?</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-            
-            <label for="resposta2">3. Cite 3 ácidos e suas funções.</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-            
-            <label for="resposta2">4.As bases são responsavéis pela liberação de qual íon? Justifique sua resposta.</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">5.As bases podem estar presentes no nosso dia a dia 
-                tanto quanto os ácidos. Cite produtos do nosso dia a dia que possuem componentes básicos.</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">6.Do que os sais são formados?Faça um breve explicação sobre sais.</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">7.Explique como se dá o nível de solubilidade dos sais.</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">8.Oque diferencia os sais das bases?</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-
-            <label for="resposta2">9.O que são óxidos?Do que são formados?</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-
-            <label for="resposta2">10.Como são classificados os óxidos?</label><br>
-            <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-            
-            <button type="submit">Enviar Respostas</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>© 2025 - Química em prática.</p>
+  <header>
+    <div class="container">
+        <img src="M.png" alt="Logo" class="logo">
+        <h1>Bem-vindo ao Mundo da Química!</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="conteúdos.html">Conteúdos</a></li>
+            <li><a href="exercícios.html">Exercícios</a></li>
+        </ul>
+    </nav>
+</header>
+<h2>História da química</h2>  
+          <div class="container">
+            <div class="texto">
+                <p>A química tem raízes muito antigas, com suas primeiras origens no estudo da alquimia, uma prática que começou por volta do século IV a.C. na Grécia e foi desenvolvida em várias partes do mundo, incluindo o mundo árabe e a China. Os alquimistas buscavam transformar metais comuns em ouro e descobrir o elixir da vida eterna. Embora esses objetivos não tenham sido alcançados, 
+                  os alquimistas foram responsáveis pelo desenvolvimento de técnicas experimentais e 
+                  a introdução de novos materiais que abriram o caminho para a ciência moderna.</p>
+                </p>No século XVII e XVIII, a química começou a se consolidar como uma ciência. Grandes figuras como Antoine Lavoisier, conhecido como o "Pai da Química Moderna", foram cruciais nesse processo. Lavoisier formulou a teoria da lei da conservação da massa, que afirmava que a massa não se perde durante uma reação química.
+                Isso foi um marco fundamental para o desenvolvimento da química como a entendemos hoje.
+               Com o tempo, as ideias sobre os átomos, moléculas e as interações químicas foram se expandindo, o que levou a descobertas como a tabela periódica de elementos, criada por Dmitri Mendeleiev no final do século XIX, organizando os elementos químicos de acordo com suas propriedades e massas atômicas.</p></div>
+      
+            <div class="imagem">
+                <img src="quimica.jpg" alt="Descrição da Imagem" class="imagem">
+            </div>
+           
+              
+       <h2>O que é a química</h2>
+       <div class="container">
+        <div class="texto">
+            <p>A Química é a ciência que estuda a composição, estrutura, propriedades e transformações da matéria. 
+              Ela está presente em tudo ao nosso redor, desde os alimentos que consumimos até os processos biológicos
+              que ocorrem dentro do nosso corpo.</p>
+        <div class="imagem">
+            <img src="todam.jpg" alt="Descrição da Imagem" class="imagem">
+        </div>
+       <div class="container">
+        <div class="texto">
+            <p>A Química é a ciência que estuda a composição, estrutura, propriedades e transformações da matéria. 
+              Ela está presente em tudo ao nosso redor, desde os alimentos que consumimos até os processos biológicos
+              que ocorrem dentro do nosso corpo.</p>
+       <h3>Química no dia a dia </h3>
+       
+       
+       
+       
+       
+       <div class="container">
+     
+        <div class="texto"><p>Alimentos e Culinária – A química está presente no cozimento dos alimentos, na fermentação do pão e até nas reações que ocorrem quando fritamos um ovo
+        - Produtos de Limpeza – Sabão, detergentes e desinfetantes são feitos com substâncias químicas que ajudam a remover sujeira e matar microrganismos.
+        - Saúde e Medicamentos – Remédios são desenvolvidos por meio da química para tratar doenças e aliviar sintomas.
+        - Respiração e Metabolismo – Nosso corpo realiza reações químicas constantemente, como a respiração celular, que transforma o oxigênio em energia.
+        - Tecnologia e Indústria – Desde a produção de plásticos até a fabricação de baterias para celulares, a química é essencial para avanços tecnológicos.<p></div>
+           <h2>Funções-inorgânicas</h2>
+           <div class="caixa">O que são Funções Inorgânicas?
+            As Funções Inorgânicas são classificações das substâncias inorgânicas com base em suas propriedades químicas.
+             Elas englobam os compostos que não possuem carbono como elemento principal, diferentemente dos compostos orgânicos.
+             </div>
+        <footer>     <p>© 2025 - Química em prática.</p>
     </footer>
 </body>
 </html>

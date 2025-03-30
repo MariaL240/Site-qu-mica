@@ -5,4 +5,28 @@ img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+}html, body {
+    height: 100%;  /* Garantir que o HTML e o BODY ocupem toda a altura da tela */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Faz o body ocupar 100% da altura da tela */
+}
+
+.content {
+    flex: 1;  /* Faz o conteúdo crescer e ocupar o espaço restante */
+}
+
+footer {
+    background-color: #99cd85;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    min-height: 80px;  /* Garante altura mínima para o footer */
+}
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Altere 'Arial' para qualquer fonte que você preferir */
+    font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #ffffff; /* Cor do texto */
 }

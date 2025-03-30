@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -43,6 +44,7 @@ button {
             font-size: 36px; /* Tamanho da fonte */
             color: #fff; /* Cor do texto */
         }
+
   </style>
     
     
@@ -51,7 +53,7 @@ button {
     <header>
         <div class="container">
             <img src="M.png" alt="Logo" class="logo">
-            <h1>Bem-vindo ao Mundo da Química!</h1>
+            <h1>Praticando</h1>
         </div>
         <nav>
             <ul>
@@ -62,10 +64,13 @@ button {
         </nav>
     </header>
     <section class="content">
-      <div class="container"> <h2>Agora, vamos resolver algumas questões para que você consiga absorver o conteúdo da melhor forma. Responda às perguntas abaixo sobre os conceitos de Química que acabamos de estudar, com foco nas funções inorgânicas.
+      <h2>Agora, vamos resolver algumas questões para que você consiga absorver o conteúdo da melhor forma. Responda às perguntas abaixo sobre os conceitos de Química que acabamos de estudar, com foco nas funções inorgânicas.
 
       </h2>
-       <img src="bases2.webp" alt="bases" class="imagem"></div>
+      <a href="https://www.todamateria.com.br/funcoes-inorganicas/" target="_blank">
+        <img src="todam.jpg" alt="nome da imagem"style="width: 250px; height: auto;">
+        </a>
+       
         <form id="formExercicio" action="#" method="post">
              <label for="resposta1">1. O que é um ácido? Dê um exemplo.</label><br>
             <textarea id="resposta1" name="resposta1" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
@@ -98,11 +103,41 @@ button {
 
             <label for="resposta2">10.Como são classificados os óxidos?</label><br>
             <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
-             <form id="formExercicio" action="" method="post" onsubmit="return false;">
+          
+            <form id="formExercicio" action="" method="post" onsubmit="return false;">
                 <!-- Campos do formulário -->
                 <button type="submit">Enviar Respostas</button>
-            </form>
+            
+            <script>
+                let respostasArray = []; // Array para armazenar as respostas
         
+                // Função para adicionar a resposta e limpar o campo
+                function enviarRespostas() {
+                    let resposta = document.getElementById("resposta").value;
+        
+                    if (resposta) {
+                        respostasArray.push(resposta); // Adiciona a resposta ao array
+                        document.getElementById("resposta").value = ""; // Limpa o campo de resposta
+                        exibirRespostas(); // Exibe as respostas
+                    }
+                }
+        
+                // Função para exibir as respostas
+                function exibirRespostas() {
+                    const respostasDiv = document.getElementById("respostas");
+                    respostasDiv.innerHTML = ""; // Limpa as respostas anteriores
+        
+                    // Exibe cada resposta armazenada no array
+                    respostasArray.forEach(function(resposta, index) {
+                        const divResposta = document.createElement("div");
+                        divResposta.classList.add("resposta");
+                        divResposta.textContent = resposta;
+                        respostasDiv.appendChild(divResposta);
+                    });
+                }
+            </script>
+            
+       
     </section>
     
     <footer>

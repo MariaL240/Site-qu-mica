@@ -12,7 +12,7 @@
     border-radius: 10px; /* Cantos arredondados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
   }
-   button {
+  button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -24,4 +24,20 @@
 
 button:hover {
     background-color: #0056b3;
+}
+
+#verRespostas {
+    display: none; /* Inicialmente escondido */
+}
+header {
+  width: 100%;
+  background-color: #99cd85;
+  color: white;
+  text-align: center;
+  padding: 10px 0;  /* Menor espaçamento (altura) no topo e embaixo */
+  font-size: 18px;   /* Menor tamanho de fonte */
+}h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Altere 'Arial' para qualquer fonte que você preferir */
+  font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #000000; /* Cor do texto */
 }

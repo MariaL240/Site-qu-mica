@@ -1,4 +1,3 @@
-/* Reset de margens e preenchimento */
 * {
     margin: 0;
     padding: 0;
@@ -186,3 +185,64 @@ nav {
                 grid-template-columns: 1fr; /* Apenas uma coluna em telas menores */
             }
         }
+    
+    .container {
+        display: flex; /* Define o layout como flexível */
+        flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte, se necessário */
+        gap: 200px; /* Espaçamento entre os quadrados */
+    }
+    
+    .caixa {
+        background-color: white;
+        padding: 20px;
+        width: 300px; /* Define a largura de cada caixa */
+        text-align:left;
+    }
+    /* Contêiner que vai organizar o texto e a imagem */
+.container {
+display: flex; /* Usa o Flexbox para organizar os itens */
+justify-content: space-between; /* Coloca o texto à esquerda e a imagem à direita */
+align-items: center; /* Alinha o conteúdo verticalmente */
+padding: 60px; /* Espaçamento interno */
+}
+
+/* Estilo do texto */
+.texto {
+font-size: 18px; /* Tamanho da fonte */
+color: #333; /* Cor do texto */
+flex:1;
+}
+
+.imagem {
+    width: 100%;  /* Faz com que a imagem ocupe toda a largura disponível */
+    max-width: 250px;  /* Limita a largura máxima para evitar que a imagem fique muito grande */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Altere 'Arial' para qualquer fonte que você preferir */
+    font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #ffffff; /* Cor do texto */
+}
+p {
+    font-family:cursive; /* Altere 'Arial' para qualquer fonte que você preferir */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #333; /* Cor do texto */
+}
+header {
+    width: 100%;
+    background-color: #99cd85;
+    color: white;
+    text-align: center;
+    padding: 10px 0;  /* Menor espaçamento (altura) no topo e embaixo */
+    font-size: 18px;   /* Menor tamanho de fonte */
+}
+header h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;/* Alterando a fonte */
+    font-size: 36px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+}
+
+
+header{ position:-ms-page; top:0; left: 0; }
+footer{ position:-ms-page;top:1;left:0}

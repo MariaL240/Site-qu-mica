@@ -1,43 +1,27 @@
 .perguntas {
-    display: grid; /* Usa grid para organizar */
-    grid-template-columns: 1fr 1fr; /* Cria duas colunas iguais */
-    gap: 20px; /* Espaçamento entre as perguntas */
-    margin: 50px; /* Espaçamento da borda da tela */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    margin: 50px; 
   }
   
   .pergunta {
-    background: #f4f4f4; /* Cor de fundo */
-    padding: 20px; /* Espaçamento interno */
-    border: 1px solid #050505; /* Borda leve */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    background: #f4f4f4; 
+    padding: 20px; 
+    border: 1px solid #050505; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); //
   }
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#verRespostas {
-    display: none; /* Inicialmente escondido */
-}
+ 
 header {
   width: 100%;
   background-color: #99cd85;
   color: white;
   text-align: center;
-  padding: 10px 0;  /* Menor espaçamento (altura) no topo e embaixo */
-  font-size: 18px;   /* Menor tamanho de fonte */
+  padding: 10px 0;  
+  font-size: 18px; 
 }h2 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Altere 'Arial' para qualquer fonte que você preferir */
-  font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
-  color: #000000; /* Cor do texto */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 30px; 
+  color: #000000; 
 }

@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <style>
     .imagem {
-          width: 300px; /* Ajusta o tamanho da imagem */
-          height: auto; /* Mantém a proporção da imagem */
-          display: block; /* Garante que a imagem fique alinhada corretamente */
-          margin-left: 0; /* Alinha no canto esquerdo */
+          width: 300px; 
+          height: auto; 
+          display: block; 
+          margin-left: 0;
         }
     
     header {
-      display: flex; /* Ativa o Flexbox */
-      justify-content: space-between;; /* Alinha os itens para o lado direito */
-      background-color: #99cd85; /* Cor de fundo opcional */
-      padding: 20x 10px; /* Espaçamento interno */
+      display: flex; 
+      justify-content: space-between;; 
+      background-color: #99cd85; 
+      padding: 20x 10px; 
     }
     .container {
-    display: flex; /* Organiza os itens em linha (horizontalmente) */
-    align-items: center; /* Alinha a imagem e o título verticalmente */
-    gap: 10px; /* Espaço entre a imagem e o texto */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
 }
 
 button {
-            background-color: black; /* Fundo preto */
-            color: white; /* Texto branco */
+            background-color: black; 
+            color: white; 
             border: none;
             padding: 12px 24px;
             font-size: 16px;
@@ -37,12 +37,12 @@ button {
         }
 
         button:hover {
-            background-color: #333; /* Preto mais claro ao passar o mouse */
+            background-color: #333; 
         }
         h1 {
             font-family:'Times New Roman', Times, serif;
-            font-size: 36px; /* Tamanho da fonte */
-            color: #fff; /* Cor do texto */
+            font-size: 36px; 
+            color: #fff; 
         }
 
   </style>
@@ -104,41 +104,11 @@ button {
             <label for="resposta2">10.Como são classificados os óxidos?</label><br>
             <textarea id="resposta2" name="resposta2" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea><br><br>
           
-            <form id="formExercicio" action="" method="post" onsubmit="return false;">
-                <!-- Campos do formulário -->
+            
+                
                 
             
-            <script>
-                let respostasArray = []; // Array para armazenar as respostas
-        
-                // Função para adicionar a resposta e limpar o campo
-                function enviarRespostas() {
-                    let resposta = document.getElementById("resposta").value;
-        
-                    if (resposta) {
-                        respostasArray.push(resposta); // Adiciona a resposta ao array
-                        document.getElementById("resposta").value = ""; // Limpa o campo de resposta
-                        exibirRespostas(); // Exibe as respostas
-                    }
-                }
-        
-                // Função para exibir as respostas
-                function exibirRespostas() {
-                    const respostasDiv = document.getElementById("respostas");
-                    respostasDiv.innerHTML = ""; // Limpa as respostas anteriores
-        
-                    // Exibe cada resposta armazenada no array
-                    respostasArray.forEach(function(resposta, index) {
-                        const divResposta = document.createElement("div");
-                        divResposta.classList.add("resposta");
-                        divResposta.textContent = resposta;
-                        respostasDiv.appendChild(divResposta);
-                    });
-                }
-            </script>
-            
-       
-    </section>
+
     
     <footer>
         <p>© 2025 - Química em prática.</p>
